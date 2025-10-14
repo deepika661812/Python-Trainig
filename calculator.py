@@ -1,4 +1,4 @@
-def calculator(a,b,operator):
+def calculator(a,operator,b):
     if  operator == "+" :
         print(a+b)
     elif operator == "-" :
@@ -10,9 +10,9 @@ def calculator(a,b,operator):
     else:
         print("invalid operator")
 while True:
-     a=int(input("enter the first num a:"))
-     b=int(input("enter the second num b:"))
-     operator=input("enter operator(+,-,*,/):")
+     a=int(input())
+     operator=input(("+,-,*,/"))
+     b=int(input())
      print("result:",calculator(a,b,operator))
 
      again = input(" you calculate again? (yes/no): ").lower()
